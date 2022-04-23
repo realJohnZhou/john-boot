@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.john</groupId>
-    <artifactId>base-starter-parent</artifactId>
+    <artifactId>john-starter-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>base</name>
+    <name>john-starter-parent</name>
     <description>base framework</description>
     <properties>
         <java.version>1.8</java.version>
