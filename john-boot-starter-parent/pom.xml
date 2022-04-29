@@ -16,7 +16,7 @@
     <properties>
         <java.version>1.8</java.version>
         <starter.web.version>1.0.0-SNAPSHOT</starter.web.version>
-
+        <starter.mysql.version>1.0.0-SNAPSHOT</starter.mysql.version>
     </properties>
 
     <dependencyManagement>
@@ -25,6 +25,11 @@
                 <groupId>com.john.boot</groupId>
                 <artifactId>john-boot-starter-web</artifactId>
                 <version>${starter.web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.john.boot</groupId>
+                <artifactId>john-boot-starter-mysql</artifactId>
+                <version>${starter.mysql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

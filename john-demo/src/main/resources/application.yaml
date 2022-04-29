@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: john-demo
+  flyway:
+    enabled: false
