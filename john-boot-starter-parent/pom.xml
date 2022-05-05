@@ -6,7 +6,6 @@
         <groupId>com.john.boot</groupId>
         <artifactId>john-boot-dependencies</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <packaging>pom</packaging>
     <artifactId>john-boot-starter-parent</artifactId>
