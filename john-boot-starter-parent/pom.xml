@@ -17,10 +17,16 @@
         <java.version>1.8</java.version>
         <starter.web.version>1.0.0-SNAPSHOT</starter.web.version>
         <starter.mysql.version>1.0.0-SNAPSHOT</starter.mysql.version>
+        <starter.common.version>1.0.0-SNAPSHOT</starter.common.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.john.boot</groupId>
+                <artifactId>john-boot-starter-common</artifactId>
+                <version>${starter.common.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.john.boot</groupId>
                 <artifactId>john-boot-starter-web</artifactId>
