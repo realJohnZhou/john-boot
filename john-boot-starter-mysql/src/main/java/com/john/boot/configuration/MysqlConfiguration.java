@@ -1,7 +1,7 @@
 package com.john.boot.configuration;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
-import com.john.boot.common.util.UserContextHolder;
+import com.john.boot.common.util.AuditUserContextHolder;
 import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.context.annotation.Bean;
 
@@ -21,14 +21,14 @@ public class MysqlConfiguration {
                 LocalDateTime now = LocalDateTime.now();
                 this.setFieldValByName("createTime", now, metaObject);
                 this.setFieldValByName("updateTime", now, metaObject);
-                String userId = UserContextHolder.getUserId() == null ? "anonymous" : UserContextHolder.getUserId();
+                String userId = AuditUserContextHolder.getUser() == null ? "anonymous" : AuditUserContextHolder.getUser().getUserId();
                 this.setFieldValByName("createBy", userId, metaObject);
                 this.setFieldValByName("updateBy", userId, metaObject);
             }
 
             @Override
             public void updateFill(MetaObject metaObject) {
-                String userId = UserContextHolder.getUserId() == null ? "anonymous" : UserContextHolder.getUserId();
+                String userId = AuditUserContextHolder.getUser() == null ? "anonymous" : AuditUserContextHolder.getUser().getUserId();
                 this.setFieldValByName("updateBy", userId, metaObject);
                 this.setFieldValByName("updateTime", LocalDateTime.now(), metaObject);
             }
