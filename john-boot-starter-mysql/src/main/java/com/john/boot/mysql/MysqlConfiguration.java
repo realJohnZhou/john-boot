@@ -1,4 +1,4 @@
-package com.john.boot.configuration;
+package com.john.boot.mysql;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.john.boot.common.util.AuditUserContextHolder;

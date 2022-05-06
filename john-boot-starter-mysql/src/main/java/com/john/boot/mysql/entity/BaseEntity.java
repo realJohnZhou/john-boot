@@ -1,4 +1,4 @@
-package com.john.boot.entity;
+package com.john.boot.mysql.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
