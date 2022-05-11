@@ -1,6 +1,8 @@
 package com.john.boot.mysql;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
+import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import com.john.boot.common.util.AuditUserContextHolder;
 import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.context.annotation.Bean;
@@ -33,5 +35,12 @@ public class MysqlConfiguration {
                 this.setFieldValByName("updateTime", LocalDateTime.now(), metaObject);
             }
         };
+    }
+
+    @Bean
+    public MybatisPlusInterceptor mybatisPlusInterceptor() {
+        MybatisPlusInterceptor mybatisPlusInterceptor = new MybatisPlusInterceptor();
+        mybatisPlusInterceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+        return mybatisPlusInterceptor;
     }
 }
