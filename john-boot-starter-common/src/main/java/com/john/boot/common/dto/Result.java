@@ -37,7 +37,7 @@ public class Result {
 
     public static Result failure(Integer code, String message) {
         Result result = new Result();
-        result.setCode(code);
+        result.setCode(code == null ? Result.NO : code);
         result.setMessage(message);
         return result;
     }
