@@ -18,6 +18,8 @@
         <starter.mysql.version>1.0.0-SNAPSHOT</starter.mysql.version>
         <starter.common.version>1.0.0-SNAPSHOT</starter.common.version>
         <starter.client.version>1.0.0-SNAPSHOT</starter.client.version>
+        <starter.redis.version>1.0.0-SNAPSHOT</starter.redis.version>
+        <jwt.version>3.3.0</jwt.version>
     </properties>
 
     <dependencyManagement>
@@ -26,6 +28,11 @@
                 <groupId>com.john.boot</groupId>
                 <artifactId>john-boot-starter-client</artifactId>
                 <version>${starter.client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.john.boot</groupId>
+                <artifactId>john-boot-starter-redis</artifactId>
+                <version>${starter.redis.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.john.boot</groupId>
@@ -41,6 +48,11 @@
                 <groupId>com.john.boot</groupId>
                 <artifactId>john-boot-starter-mysql</artifactId>
                 <version>${starter.mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>${jwt.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
