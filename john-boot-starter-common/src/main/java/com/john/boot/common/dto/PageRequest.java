@@ -6,8 +6,8 @@ import lombok.Data;
  * @author john
  */
 @Data
-public class AuditUser {
-    private String userId;
+public class PageRequest {
+    private Long current;
 
-    private String name;
+    private Long size;
 }
