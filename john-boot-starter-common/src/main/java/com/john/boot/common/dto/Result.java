@@ -9,7 +9,7 @@ import lombok.Data;
 public class Result<T> {
     public static final Integer OK = 1;
 
-    public static final Integer NO = 0;
+    public static final Integer NO = -1;
 
     private Integer code;
 
