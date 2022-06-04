@@ -1,6 +1,6 @@
 package com.john.boot.common.util;
 
-import com.john.boot.common.dto.AuditUser;
+import com.john.boot.common.dto.AuthUser;
 
 /**
  * 审计功能使用的用户
@@ -8,17 +8,17 @@ import com.john.boot.common.dto.AuditUser;
  * @author john
  */
 public class AuditUserContextHolder {
-    private static final ThreadLocal<AuditUser> USER_ID_HOLDER = new ThreadLocal<>();
+    private static final ThreadLocal<AuthUser> USER_ID_HOLDER = new ThreadLocal<>();
 
-    public static AuditUser getUser() {
+    public static AuthUser getUser() {
         return USER_ID_HOLDER.get();
     }
 
-    public void setUser(AuditUser AuditUser) {
-        USER_ID_HOLDER.set(AuditUser);
+    public static void setUser(AuthUser auditUser) {
+        USER_ID_HOLDER.set(auditUser);
     }
 
-    public void remove() {
+    public static void remove() {
         USER_ID_HOLDER.remove();
     }
 }
