@@ -31,9 +31,6 @@ public class SwaggerConfig {
                 .build();
     }
 
-    /**
-     * 安全模式，这里指定token通过Authorization头请求头传递
-     */
     private List<ApiKey> securitySchemes() {
         List<ApiKey> apiKeyList = new ArrayList<>();
         apiKeyList.add(new ApiKey("Authorization", "Authorization", "header"));
