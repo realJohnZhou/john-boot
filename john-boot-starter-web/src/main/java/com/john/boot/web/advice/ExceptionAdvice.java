@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class ExceptionAdvice {
 
     @ExceptionHandler(BusinessException.class)
-    public Result exceptionHandler(BusinessException e) {
+    public Result<?> exceptionHandler(BusinessException e) {
         log.error("error: {}", e.getMessage(), e);
         return Result.failure(e.getCode(), e.getMessage());
     }
