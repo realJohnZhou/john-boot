@@ -20,7 +20,7 @@ public class ExceptionAdvice {
     }
 
     @ExceptionHandler(Exception.class)
-    public Result exceptionHandler(Exception e) {
+    public Result<?> exceptionHandler(Exception e) {
         log.error("error: {}", e.getMessage(), e);
         return Result.failure(e.getMessage());
     }
