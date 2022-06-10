@@ -21,6 +21,12 @@ public class ApplicationContextUtil implements ApplicationContextAware {
         ApplicationContextUtil.applicationContext = applicationContext;
     }
 
+    /**
+     * get bean by class
+     * @param clazz
+     * @param <T>
+     * @return
+     */
     public static <T> T getBean(Class<T> clazz) {
         return applicationContext.getBean(clazz);
     }
