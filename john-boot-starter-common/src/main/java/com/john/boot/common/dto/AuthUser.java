@@ -9,6 +9,9 @@ import java.util.Set;
  */
 @Data
 public class AuthUser {
+    /**
+     * user id
+     */
     private String userId;
 
     private String username;
