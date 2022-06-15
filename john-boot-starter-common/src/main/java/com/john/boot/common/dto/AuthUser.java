@@ -13,7 +13,9 @@ public class AuthUser {
      * user id
      */
     private String userId;
-
+    /**
+     * username
+     */
     private String username;
 
     private String password;
