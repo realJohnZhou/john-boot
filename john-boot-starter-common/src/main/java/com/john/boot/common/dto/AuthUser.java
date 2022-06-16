@@ -17,7 +17,9 @@ public class AuthUser {
      * username
      */
     private String username;
-
+    /**
+     * password
+     */
     private String password;
 
     private String name;
