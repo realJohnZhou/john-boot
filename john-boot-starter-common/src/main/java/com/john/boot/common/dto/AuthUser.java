@@ -21,7 +21,9 @@ public class AuthUser {
      * password
      */
     private String password;
-
+    /**
+     * name
+     */
     private String name;
 
     private String phone;
