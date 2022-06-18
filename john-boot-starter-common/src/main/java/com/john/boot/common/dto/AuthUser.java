@@ -25,7 +25,9 @@ public class AuthUser {
      * name
      */
     private String name;
-
+    /**
+     * phone
+     */
     private String phone;
 
     private String email;
