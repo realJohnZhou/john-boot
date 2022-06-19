@@ -29,7 +29,9 @@ public class AuthUser {
      * phone
      */
     private String phone;
-
+    /**
+     * email
+     */
     private String email;
 
     private Set<String> roles;
