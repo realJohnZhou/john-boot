@@ -33,6 +33,8 @@ public class AuthUser {
      * email
      */
     private String email;
-
+    /**
+     * roles
+     */
     private Set<String> roles;
 }
