@@ -7,6 +7,9 @@ import lombok.Data;
  */
 @Data
 public class PageRequest {
+    /**
+     * current page
+     */
     private Long current;
 
     private Long size;
