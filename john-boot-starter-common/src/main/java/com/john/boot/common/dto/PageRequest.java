@@ -11,6 +11,8 @@ public class PageRequest {
      * current page
      */
     private Long current;
-
+    /**
+     * page size
+     */
     private Long size;
 }
