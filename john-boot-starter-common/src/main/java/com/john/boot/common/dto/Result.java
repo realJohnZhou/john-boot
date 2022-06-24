@@ -11,6 +11,9 @@ public class Result<T> {
 
     public static final Integer NO = -1;
 
+    /**
+     * business code
+     */
     private Integer code;
 
     private T data;
