@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class ExceptionAdvice {
 
+    /**
+     * business exception
+     * @param e
+     * @return
+     */
     @ExceptionHandler(BusinessException.class)
     public Result<?> exceptionHandler(BusinessException e) {
         log.error("error: {}", e.getMessage(), e);
