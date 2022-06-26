@@ -16,6 +16,9 @@ public class Result<T> {
      */
     private Integer code;
 
+    /**
+     * data
+     */
     private T data;
 
     private String message;
