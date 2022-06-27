@@ -20,7 +20,9 @@ public class Result<T> {
      * data
      */
     private T data;
-
+    /**
+     * message
+     */
     private String message;
 
     private Result() {
