@@ -28,6 +28,13 @@ public class Result<T> {
     private Result() {
     }
 
+    /**
+     * success
+     * @param code business code
+     * @param data data
+     * @param <T>
+     * @return
+     */
     public static <T> Result<T> success(Integer code, T data) {
         Result<T> result = new Result<>();
         result.setCode(code);
