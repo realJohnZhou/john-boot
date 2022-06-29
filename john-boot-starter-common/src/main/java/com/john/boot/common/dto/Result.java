@@ -42,6 +42,12 @@ public class Result<T> {
         return result;
     }
 
+    /**
+     * success
+     * @param data data
+     * @param <T>
+     * @return
+     */
     public static <T> Result<T> success(T data) {
         return Result.success(Result.OK, data);
     }
