@@ -61,6 +61,13 @@ public class Result<T> {
         return Result.success(Result.OK, null);
     }
 
+    /**
+     * failure
+     * @param code code
+     * @param message msg
+     * @param <T>
+     * @return
+     */
     public static <T> Result<T> failure(Integer code, String message) {
         Result<T> result = new Result<>();
         result.setCode(code == null ? Result.NO : code);
