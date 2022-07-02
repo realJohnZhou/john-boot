@@ -75,6 +75,12 @@ public class Result<T> {
         return result;
     }
 
+    /**
+     * failure
+     * @param message
+     * @param <T>
+     * @return
+     */
     public static <T> Result<T> failure(String message) {
         return Result.failure(Result.NO, message);
     }
