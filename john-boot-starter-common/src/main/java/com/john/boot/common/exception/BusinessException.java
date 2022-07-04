@@ -9,6 +9,9 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class BusinessException extends RuntimeException {
+    /**
+     * business code
+     */
     private Integer code;
 
     public BusinessException() {
