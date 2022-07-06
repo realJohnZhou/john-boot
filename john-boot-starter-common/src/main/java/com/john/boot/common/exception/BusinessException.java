@@ -10,6 +10,7 @@ import lombok.EqualsAndHashCode;
 @Data
 public class BusinessException extends RuntimeException {
     /**
+     *
      * business code
      */
     private Integer code;
