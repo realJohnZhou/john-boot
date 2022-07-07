@@ -8,6 +8,12 @@ import com.john.boot.common.dto.PageRequest;
  */
 public class PageUtil {
 
+    /**
+     * get page
+     * @param pageRequest
+     * @param <T>
+     * @return
+     */
     public static <T> Page<T> getPage(PageRequest pageRequest) {
         return new Page<>(pageRequest.getCurrent(), pageRequest.getSize());
     }
