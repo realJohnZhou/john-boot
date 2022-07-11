@@ -15,6 +15,7 @@ public class ExceptionAdvice {
 
     /**
      * business exception
+     *
      * @param e
      * @return
      */
@@ -26,6 +27,7 @@ public class ExceptionAdvice {
 
     /**
      * all exception
+     *
      * @param e
      * @return
      */
