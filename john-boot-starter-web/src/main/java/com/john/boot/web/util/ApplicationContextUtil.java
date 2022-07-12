@@ -23,6 +23,7 @@ public class ApplicationContextUtil implements ApplicationContextAware {
 
     /**
      * get bean by class
+     *
      * @param clazz
      * @param <T>
      * @return
