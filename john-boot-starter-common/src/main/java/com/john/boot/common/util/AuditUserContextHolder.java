@@ -10,6 +10,11 @@ import com.john.boot.common.dto.AuthUser;
 public class AuditUserContextHolder {
     private static final ThreadLocal<AuthUser> USER_ID_HOLDER = new ThreadLocal<>();
 
+    /**
+     * get user
+     *
+     * @return
+     */
     public static AuthUser getUser() {
         return USER_ID_HOLDER.get();
     }
