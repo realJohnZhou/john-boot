@@ -5,6 +5,8 @@ import lombok.Data;
 import java.util.Set;
 
 /**
+ * auth user
+ *
  * @author john
  */
 @Data
