@@ -3,6 +3,8 @@ package com.john.boot.common.dto;
 import lombok.Data;
 
 /**
+ * page request
+ *
  * @author john
  */
 @Data
