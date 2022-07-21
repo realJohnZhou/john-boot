@@ -54,6 +54,7 @@ public class Result<T> {
 
     /**
      * success
+     *
      * @param <T>
      * @return
      */
