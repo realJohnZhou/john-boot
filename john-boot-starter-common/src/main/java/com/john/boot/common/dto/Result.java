@@ -79,6 +79,7 @@ public class Result<T> {
 
     /**
      * failure
+     *
      * @param message
      * @param <T>
      * @return
